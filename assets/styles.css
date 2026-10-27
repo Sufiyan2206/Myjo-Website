@@ -68,6 +68,7 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);ba
 .menu .chev{width:14px;height:14px;transition:transform .2s}
 .menu li.open .chev{transform:rotate(180deg)}
 .dropdown{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:12px;width:340px;display:none}
+.dropdown::before{content:"";position:absolute;left:0;right:0;top:-14px;height:14px}
 .menu li.open .dropdown{display:block}
 .dropdown a{display:flex;gap:14px;padding:12px;border-radius:12px;text-decoration:none}
 .dropdown a:hover{background:var(--bg-alt)}
